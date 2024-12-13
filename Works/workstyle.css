@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F7F4F2;
+}
+  
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+  
+/* Header styling */
+header {
+    background-color: #F3DAD8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+  }
+  
+  /* Title styling */
+header h1 {
+    font-family: 'Reenie Beanie', cursive;
+    color: #7B5B4D;
+    font-size: 2.5rem;
+    flex: 1;
+    text-align: center;
+  }
+  
+  /* Navigation links (hidden by default) */
+  .nav-links {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    background-color: #F3DAD8;
+    position: absolute;
+    top: 60px; /* Position dropdown under hamburger */
+    right: 20px;
+    width: 150px;
+    border-radius: 5px;
+    padding: 10px;
+    gap: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  /* Navigation links when shown */
+  .nav-links.show {
+    display: flex;
+  }
+  
+  /* Individual link styling */
+  .nav-links a {
+    text-decoration: none;
+    color: #7B5B4D;
+    font-family: 'Crushed', cursive;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #5A3C30;
+  }
+  
+  /* Hamburger icon styling (visible on all screen sizes) */
+  .hamburger {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #7B5B4D;
+    transition: transform 0.3s ease;
+  }
+
+  .hamburger:hover {
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+}
+  
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 70px;
+  }
+  
+  .project {
+    overflow: hidden;
+    text-align: left;
+  }
+  
+  .project img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+    -webkit-transition: transform 0.3s ease;
+    -moz-transition: transform 0.3s ease;
+    -ms-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+}
+
+.project img:hover {
+  transform: scale(1.1);
+}
+
+.details {
+  padding: 15px;
+}
+  
+.details h2 {
+  font-family: 'Crushed';
+  color: #7B5B4D;
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+  
+.details p {
+    color: #ac9b94;
+    font-size: 0.9rem;
+    font-family: 'Epilogue';
+    letter-spacing: 0.7px;
+  }
+  
+
+/* Modal background */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Modal content */
+  .modal-content {
+    background-color: #ffffff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Close button */
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2rem;
+    color: #7B5B4D;
+    cursor: pointer;
+  }
+  
+  /* Modal body styling */
+  .modal-body {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .modal-body img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .modal-details h2 {
+    font-family: 'Reenie Beanie', cursive;
+    color: #7B5B4D;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .modal-details p {
+    font-size: 1rem;
+    font-family: 'Crushed';
+    margin: 5px 0;
+    color: #7B5B4D;
+  }
+  
+  #modal-description {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #b4a6a6;
+    max-width: 100%; 
+    letter-spacing: 0.5px;
+  }
+  
+  .fade-in {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Slight downward offset */
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  /* Class to show the elements */
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }

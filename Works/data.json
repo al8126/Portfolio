@@ -1,0 +1,67 @@
+[
+    {
+        "image": "../Pictures/stamp 1.png",
+        "title": "Stamp 1",
+        "description": "Stamps that show how to make dumplings, with actual instructions written in Chinese integrated into the piece. This is step one -- it teaches you how to make the dough.",
+        "year": 2022,
+        "medium": "Digital Art; Procreate, Adobe Photoshop",
+        "dimensions": "12 x 24 inches"
+    },
+    {
+        "image": "../Pictures/stamp 2.png",
+        "title": "Stamp 2",
+        "description": "Stamps that show how to make dumplings, with actual instructions written in Chinese integrated into the piece. This is step two -- it teaches you how to roll out the dough.",
+        "year": 2022,
+        "medium": "Digital Art; Procreate, Adobe Photoshop",
+        "dimensions": "12 x 24 inches"
+    },
+    {
+        "image": "../Pictures/stamp 3.png",
+        "title": "Stamp 3",
+        "description": "Stamps that show how to make dumplings, with actual instructions written in Chinese integrated into the piece. This is step three -- it teaches you how to assemble the dumpling.",
+        "year": 2022,
+        "medium": "Digital Art; Procreate, Adobe Photoshop",
+        "dimensions": "12 x 24 inches"
+    },
+    {
+      "image": "../Pictures/Fallen Angel.PNG",
+      "title": "Fallen Angel",
+      "description": "A movie poster that shows an angel, mistaken as a shooting star, falling down to Earth. The art was drawn on Procreate, then formatted on Photoshop",
+      "year": 2022,
+      "medium": "Digital Art, Procreate, Adobe Photoshop",
+      "dimensions": "12 x 24 inches"
+    },
+    {
+      "image": "../Pictures/forget.PNG",
+      "title": "Forgetful",
+      "description": "An art piece that shows the process of forgetting something. This was drawn purely with Photoshop. I tried to mimic the foggy feeling of forgetting something with the unclear boundaries of the character's legs",
+      "year": 2022,
+      "medium": "Digital Art, Procreate",
+      "dimensions": "12 x 24 inches"
+    },
+    {
+      "image": "../Pictures/movie.jpg",
+      "title": "Fate",
+      "description": "A movie poster that shows the idea of the red string of fate. The art was drawn on Procreate, then formatted on Photoshop",
+      "year": 2023,
+      "medium": "Digital Art, Procreaete",
+      "dimensions": "12 x 24 inches"
+    },
+    {
+        "image": "../Pictures/identity loss.JPG",
+        "title": "Identity Loss",
+        "description": "This shows the process of identity loss from the background and foreground. The background shows the character as a normal, hardworking student, which later gets burnt out, shown in the black foreground.",
+        "year": 2022,
+        "medium": "Digital Art, Procreate, Photoshop",
+        "dimensions": "I forgor"
+    },
+    {
+      "image": "../Pictures/dissociating.jpg",
+      "title": "Dissociating",
+      "description": "This art piece shows the process of dissassociating. This shows a character who spills her milk in the morning when she dissociates. ",
+      "year": 2023,
+      "medium": "Digital Art, Procreate",
+      "dimensions": "12 x 24 inches"
+    }
+  ]
+  
