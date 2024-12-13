@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #F7F4F2; /* Off white as the overall background */
+    color: #7B5B4D; /* Lighter brown for main body text */
+}
+
+header {
+    background-color: #A5AD99; /* Sage Green for the header for contrast */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 80px;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.logo h1 {
+    font-family: 'Reenie Beanie';
+    font-size: 42px;
+    color: #F7F4F2; /* Off-white text for contrast on Sage Green header */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.menu-icon {
+    display: none; /* Hidden by default */
+}
+
+.dropdown-content {
+    display: none; /* Hidden by default */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #F7F4F2; /* Off-white links on the Sage Green background */
+    font-family: 'Crushed'; 
+    font-size: 20px;
+}
+
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search button {
+    background-color: #7B5B4D; 
+    color: white; 
+    border: none;
+    padding: 10px 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Reenie Beanie';
+    font-size: 14px;
+}
+
+.search button span {
+    margin-right: 10px;
+}
+
+.middle {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.middle h2 {
+    font-size: 68px;
+    font-family: 'Reenie Beanie';
+    color: #7B5B4D; /* Lighter brown for strong contrast */
+}
+
+.middle img {
+    width: 320px;
+    height: auto;
+    margin: 30px;
+}
+
+.middle h3 {
+    font-family: 'Crushed';
+    font-size: 24px; /* Increase size slightly for emphasis */
+    font-weight: bold;
+    color: #A5AD99; /* Sage Green for contrast with body text */
+    margin-bottom: 40px;
+}
+
+.start-button {
+    font-family: 'Reenie Beanie';
+    font-size: 2rem;
+    text-decoration: none;
+    background-color: #F3DAD8; /* Light pink for button background */
+    color: #7B5B4D; /* Lighter brown for button text */
+    padding: 15px 50px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.start-button:hover {
+    background-color: #7B5B4D; /* Lighter brown on hover */
+    color: #F7F4F2; /* Off-white text on hover */
+}
+
+/* Additional styling for hover states */
+.nav-links a:hover {
+    color: #F3DAD8; /* Light pink on hover for nav links */
+}
+
+.search button:hover {
+    background-color: #F3DAD8; /* Light pink on hover for the search button */
+    color: #7B5B4D; /* Lighter brown text on hover for the search button */
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-input {
+    display: none; /* Hidden by default */
+    top: 0;
+    left: 0;
+    width: 100%; /* Takes the button's width */
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.fade-in {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Slight downward offset */
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  /* Class to show the elements */
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+/* Media Query for smaller devices (up to 768px width) */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .logo h1 {
+        font-size: 36px; /* Smaller font for the logo */
+    }
+
+    nav {
+        justify-content: flex-end;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .menu-icon {
+        display: block;
+        background: transparent; /* Remove default button background */
+        border: none; /* Remove border */
+        cursor: pointer; /* Change cursor to pointer */
+        color: #F7F4F2; /* Change icon color to match the theme */
+        font-size: 24px; /* Adjust size as needed */
+        margin-right: 20px; /* Add margin to separate from links */
+    }
+    
+    .menu-icon:hover {
+        color: #F3DAD8; /* Change color on hover for better UX */
+    }
+    
+    .dropdown-content {
+        display: none; /* Hidden by default */
+    }
+
+    .search button {
+        padding: 8px 15px; /* Smaller padding for a smaller button */
+        font-size: 14px; /* Adjust font size for smaller button */
+    }
+
+    .middle h2 {
+        font-size: 48px; /* Adjusted for smaller screens */
+    }
+
+    .middle img {
+        width: 200px; /* Smaller image for mobile */
+        height: auto;
+    }
+
+    .middle h3 {
+        font-size: 18px; /* Slightly smaller text for mobile */
+    }
+
+    .start-button {
+        font-size: 18px; /* Adjusted for smaller screens */
+        padding: 10px 20px;
+    }
+
+    .dropdown-content {
+        list-style: none; /* Remove bullet points from the dropdown */
+        padding: 0; /* Remove default padding */
+        margin: 0; /* Remove default margin */
+    }
+
+
+    .dropdown-content.active {
+        display: block; /* Use flex for vertical alignment */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        background-color: #7B5B4D; /* Matching color theme */
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .dropdown-content li {
+        margin: 10px 0;
+    }
+
+    .dropdown-content a {
+        font-family: 'Crushed';
+        color: #F7F4F2; /* Off-white links */
+        text-decoration: none;
+        padding: 5px 10px;
+        display: block;
+    }
+
+    
+}
+/* Media Query for Phone Screen Size (up to 480px width) */
+@media (max-width: 480px) {
+    header {
+        padding: 10px 15px; /* Adjust header padding for smaller screens */
+    }
+
+    .logo h1 {
+        font-size: 28px; /* Smaller font for the logo on phone */
+    }
+
+    .search input {
+        display: none; /* Hide the search input */
+    }
+
+    .search button {
+        padding: 0px;
+        background-color: transparent;
+    }
+  
+  .search button:hover {
+        background-color: transparent; /* Transparent background on hover */
+        color: #F3DAD8; /* Change text color on hover if desired */
+    }
+
+    .search button span {
+        display: none; /* Ensure any text within the button is hidden */
+    }
+
+    .middle h2 {
+        font-size: 36px; /* Smaller font for middle section */
+    }
+
+    .middle img {
+        width: 180px; /* Smaller image for mobile */
+        height: auto;
+    }
+
+    .middle h3 {
+        font-size: 16px; /* Slightly smaller text for mobile */
+    }
+
+    .start-button {
+        font-size: 16px; /* Adjusted for smaller screens */
+        padding: 8px 16px; /* Adjust padding */
+    }
+
+    /* Dropdown Menu Adjustments */
+    .dropdown-content {
+        right: 10px; /* Align dropdown to the left */
+        padding: 8px; /* Adjust padding for dropdown */
+    }
+
+    .dropdown-content a {
+        font-size: 16px; /* Smaller font size for dropdown links */
+        padding: 4px 8px; /* Adjust padding for links */
+    }
+
+    .menu-icon {
+        font-size: 24px; /* Increase icon size for better tap area */
+    }
+}
