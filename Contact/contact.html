@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Designer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crushed&family=Reenie+Beanie&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="contactstyle.css">
+</head>
+<body>
+
+        <header class="fade-in">
+                <nav>
+                    <div class="logo">
+                        <img src="../Pictures/cat2.png" alt="Ann Li Logo" class="logo-img">
+                        <h2>Ann Li</h2>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="../Home/index.html">Home</a></li>
+                        <li><a href="contact.html">About</a></li>
+                        <li><a href="../Works/works.html">Portfolio</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                        <button class="menu-icon"><i class="fas fa-bars"></i></button>
+                        <!-- Dropdown content for smaller screens -->
+                        <ul class="dropdown-content">
+                            <li><a href="../Home/index.html">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                    </ul>
+                <div class="search">
+                    <button class="search-button">
+                        <span>Search</span>
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <input type="text" placeholder="Search..." class="search-input">
+                </div>
+            </nav>
+        </header>
+        <main class="content" class="content_fade-in">
+            <div class="text-content">
+            <div class="about">
+                <p>About | Me</p>
+            </div>
+        <h1>
+            <span class="line">Web</span>
+            <span class="line highlight">Designer</span>
+        </h1>
+                <p>Hi! My name is Ann and I am a sophomore student at NYU Learning Interactive Media Arts.</p>
+                <button id="contact-button">Contact</button>
+
+            <div id="contact-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email">
+                
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number">
+                
+                <button type="submit" id="submit-button">Submit</button>
+            </div>
+            <div id="thanks">
+                <p> Thank you!</p>
+            </div>
+        </div>
+            <!-- Illustration on the Right -->
+
+            <div class="illustration">
+                <img src="../Pictures/fishie.png" alt="Fish Character">
+            </div>
+        </main>
+    </div>
+    <script src="contact.js"></script>
+</body>
+</html>
